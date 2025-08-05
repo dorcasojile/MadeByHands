@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MadeByHands.ng</title>
+  <style>
+    :root {
+      --primary: #00796B;
+      --accent: #FFD700;
+      --light-bg: #f7f7f7;
+      --dark: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1500x500?text=Artisans+at+Work') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-bar input,
+    .search-bar button {
+      padding: 0.8rem;
+      margin: 0.3rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .search-bar input {
+      width: 40%;
+      max-width: 200px;
+    }
+
+    .search-bar button {
+      background-color: var(--primary);
+      color: white;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .categories,
+    .featured,
+    .marketplace {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta {
+      background-color: var(--accent);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .cta button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .search-bar input {
+        width: 80%;
+        display: block;
+        margin: 0.5rem auto;
+      }
+
+      .search-bar button {
+        display: block;
+        margin: 0.5rem auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>🖐️ MadeByHands</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Browse Artisans</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find Talented Artisans Near You</h1>
+    <p>Join Nigeria’s #1 Artisan Showcase Marketplace</p>
+    <div class="search-bar">
+      <input type="text" placeholder="What do you need?" />
+      <input type="text" placeholder="Location" />
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Popular Categories</h2>
+    <div class="categories">
+      <div class="card">🧵 Tailors</div>
+      <div class="card">🪵 Carpenters</div>
+      <div class="card">✂️ Hairdressers</div>
+      <div class="card">👨‍🍳 Caterers</div>
+      <div class="card">🎨 Painters</div>
+      <div class="card">🔧 Plumbers</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>How It Works</h2>
+    <p>1. Artisans sign up and showcase their work</p>
+    <p>2. Customers search and find verified artisans</p>
+    <p>3. Chat, book, and shop directly</p>
+  </section>
+
+  <section class="section">
+    <h2>Featured Artisans</h2>
+    <div class="featured">
+      <div class="card">Artisan 1 - Tailor</div>
+      <div class="card">Artisan 2 - Carpenter</div>
+      <div class="card">Artisan 3 - Hairdresser</div>
+      <div class="card">Artisan 4 - Plumber</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Marketplace</h2>
+    <div class="marketplace">
+      <div class="card">Ankara Bag - ₦8,000</div>
+      <div class="card">Wooden Chair - ₦25,000</div>
+      <div class="card">Custom Shoes - ₦15,000</div>
+      <div class="card">Painted Frame - ₦10,000</div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Are you an artisan? Get discovered now!</h2>
+    <button>Join Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MadeByHands.ng</p>
+    <p>📍 About | 📞 Contact | 📄 Terms | 📧 madebyhands.ng@gmail.com</p>
+  </footer>
+</body>
+</html>
