@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadeByHands - Showcase Your Craft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background: #056676;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #056676;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #056676;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MadeByHands</h1>
+        <p>Connecting talented artisans with the world</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#signup">Join</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>MadeByHands is a platform where skilled artisans can showcase their crafts, share their portfolio, and get connected to clients who appreciate handmade excellence.</p>
+    </section>
+
+    <div class="cta">
+        <a href="#signup">Join as Artisan</a>
+    </div>
+
+    <section id="signup">
+        <h2>Sign Up as an Artisan</h2>
+        <form action="https://formsubmit.co/gbenga.dahdah@gmail.com?noCaptcha=true" method="POST">
+            <input type="hidden" name="_autoresponse" value="Thanks! We’ve received your form. We’ll be in touch soon.">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="craft" placeholder="What type of artisan are you?" required>
+            <textarea name="message" placeholder="Tell us more about your service..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
