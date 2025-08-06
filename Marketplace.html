@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketplace - MadeByHands</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #4b2e83;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .marketplace {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .marketplace h1 {
+      text-align: center;
+      color: #4b2e83;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .item-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .item-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .item-card .info {
+      padding: 1rem;
+    }
+
+    .item-card h3 {
+      margin: 0 0 0.5rem;
+      color: #4b2e83;
+    }
+
+    .item-card p {
+      margin: 0.25rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="Logo">
+      <h2>MadeByHands</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="marketplace">
+    <h1>Artisan Marketplace</h1>
+    <div class="grid">
+      <!-- Sample product card -->
+      <div class="item-card">
+        <img src="https://via.placeholder.com/400x300.png?text=Handmade+Bag" alt="Product">
+        <div class="info">
+          <h3>Handmade Leather Bag</h3>
+          <p><strong>₦25,000</strong></p>
+          <p>By: Grace Crafts</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="https://via.placeholder.com/400x300.png?text=Ankara+Shoes" alt="Product">
+        <div class="info">
+          <h3>Ankara Sneakers</h3>
+          <p><strong>₦15,000</strong></p>
+          <p>By: Tobi Wear</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="https://via.placeholder.com/400x300.png?text=Beaded+Jewelry" alt="Product">
+        <div class="info">
+          <h3>Beaded Jewelry Set</h3>
+          <p><strong>₦10,000</strong></p>
+          <p>By: Ada Beads</p>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MadeByHands.ng. All rights reserved.
+  </footer>
+</body>
+</html>
