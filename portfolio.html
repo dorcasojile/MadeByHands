@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artisan Portfolio - MadeByHands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
+        header { background-color: #4b2e83; color: white; padding: 1rem; text-align: center; }
+        h1 { margin: 0; }
+        .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h3 { margin: 0.5rem 0 0.2rem; color: #333; }
+        .card p { font-size: 0.9rem; color: #666; }
+        .card button {
+            margin-top: 0.5rem;
+            background-color: #4b2e83;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover { background-color: #3a2569; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Our Artisans</h1>
+    </header>
+    <section class="portfolio">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Artisan 1">
+            <h3>Ada Johnson</h3>
+            <p>Fashion Designer</p>
+            <p>Specializes in custom traditional wear with modern flair.</p>
+            <button>Contact</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Artisan 2">
+            <h3>Tunde Abiola</h3>
+            <p>Woodworker</p>
+            <p>Crafts handmade furniture from locally sourced materials.</p>
+            <button>Contact</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Artisan 3">
+            <h3>Chioma Eze</h3>
+            <p>Bead Maker</p>
+            <p>Creates elegant bead jewelry for weddings and events.</p>
+            <button>Contact</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Artisan 4">
+            <h3>Musa Bello</h3>
+            <p>Leather Craftsman</p>
+            <p>Makes handmade shoes and bags from premium leather.</p>
+            <button>Contact</button>
+        </div>
+    </section>
+</body>
+</html>
